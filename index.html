@@ -1,0 +1,240 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Margaret Brown | Frontend Developer</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <a href="#home" class="logo">MB<span>.</span></a>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+
+        <!-- Profile Image -->
+        <div class="hero-image">
+            <img src="image.jpg" alt="Portrait of Margaret Brown">
+        </div>
+
+        <!-- Introduction -->
+        <div class="hero-content">
+            <p class="welcome">WELCOME TO MY PORTFOLIO</p>
+
+            <h1>Hello, I'm <span>Margaret Brown</span></h1>
+
+            <h2>Frontend Developer</h2>
+
+            <p>
+                I create clean, responsive, and user-friendly websites
+                using modern web technologies.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#projects" class="btn">View My Projects</a>
+                <a href="#contact" class="btn btn-outline">Contact Me</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="section-heading">
+            <p>GET TO KNOW ME</p>
+            <h2>About Me</h2>
+        </div>
+
+        <div class="about-content">
+            <p>
+                I am a frontend development learner passionate about
+                creating attractive, responsive, and accessible websites.
+                I enjoy learning new technologies and turning ideas into
+                functional web experiences.
+            </p>
+
+            <h3>My Technical Skills</h3>
+
+            <div class="skills">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Git</span>
+                <span>GitHub</span>
+                <span>Responsive Design</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="section-heading">
+            <p>WHAT I'VE BEEN WORKING ON</p>
+            <h2>My Projects</h2>
+        </div>
+
+        <div class="project-grid">
+
+            <!-- Project One -->
+            <article class="project-card">
+                <div class="project-number">01</div>
+                <h3>API Data Fetch App</h3>
+
+                <p>
+                    A web application that fetches and displays data
+                    from an external API using JavaScript.
+                </p>
+
+                <p class="tech-stack">HTML · CSS · JavaScript · API</p>
+
+                <a
+                    href="https://brownmargaret2002.github.io/api-assignment/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                >
+                    View Project →
+                </a>
+            </article>
+
+            <!-- Project Two -->
+            <article class="project-card">
+                <div class="project-number">02</div>
+                <h3>Medium-Inspired Landing Page</h3>
+
+                <p>
+                    A landing page inspired by Medium, featuring a
+                    navigation menu, hero content, and call-to-action.
+                </p>
+
+                <p class="tech-stack">HTML · CSS</p>
+
+                <a href="#contact" class="project-link">
+                    Project Details →
+                </a>
+            </article>
+
+            <!-- Project Three -->
+            <article class="project-card">
+                <div class="project-number">03</div>
+                <h3>Personal Portfolio Website</h3>
+
+                <p>
+                    A responsive portfolio designed to showcase
+                    my technical skills, projects, and contact details.
+                </p>
+
+                <p class="tech-stack">HTML · CSS · JavaScript</p>
+
+                <a href="#home" class="project-link">
+                    View Portfolio →
+                </a>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="section-heading">
+            <p>LET'S CONNECT</p>
+            <h2>Contact Me</h2>
+        </div>
+
+        <p class="contact-intro">
+            Have a project or opportunity in mind? I'd love to hear from you.
+        </p>
+
+        <form id="contact-form">
+
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your full name"
+                    required
+                    minlength="2"
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email address"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Enter your phone number"
+                    required
+                    pattern="[0-9+() -]{10,20}"
+                    title="Enter a phone number using at least 10 characters."
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Write your message here"
+                    required
+                    minlength="10"
+                ></textarea>
+            </div>
+
+            <button type="submit" class="btn">Send Message</button>
+
+            <p id="form-status" role="status" aria-live="polite"></p>
+
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            &copy; <span id="year"></span> Margaret Brown.
+            All rights reserved.
+        </p>
+
+        <a
+            href="https://github.com/brownmargaret2002"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            Visit My GitHub
+        </a>
+    </footer>
+
+</body>
+</html>
